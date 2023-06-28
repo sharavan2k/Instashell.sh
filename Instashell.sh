@@ -2,15 +2,15 @@
 # Coded by @thelinuxchoice (Instagram)
 checkroot()
 {
-if [[ "$(id -u)" -ne 0 ]]; then
-    printf "\e[1;77mPlease, run this program as root!\n\e[0m"
+if ("$(id -u)" -ne 0 ):
+    printf("\e[1;77mPlease, run this program as root!\n\e[0m")
     exit 1
 fi
 }
 
 banner()
 {
-
+(
 printf "\e[1;92m     _                                   _             _  _           \e[0m\n"
 printf "\e[1;92m _  | |                _                | |           | || |          \e[0m\n"
 printf "\e[1;92m( \ | | ____    ___  _| |_  _____   ___ | |__   _____ | || |          \e[0m\n"
