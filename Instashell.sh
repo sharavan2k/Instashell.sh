@@ -4,8 +4,8 @@ checkroot()
 {
 if ("$(id -u)" -ne 0 ):
     printf("\e[1;77mPlease, run this program as root!\n\e[0m")
-    exit 1
-fi
+    exit(1)
+
 }
 
 banner()
